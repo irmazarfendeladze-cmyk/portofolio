@@ -103,6 +103,16 @@ export class HomeComponent {
       descriptionKey: 'projects.shop.description',
       previewClass: 'shop',
       tech: ['Angular', 'TypeScript', 'SCSS']
+    },
+    {
+      id: 'train-ticket',
+      category: 'web',
+      href: 'https://train-ticket2.vercel.app/search',
+      image: 'assets/images/projects/train-ticket.webp',
+      titleKey: 'projects.trainTicket.title',
+      descriptionKey: 'projects.trainTicket.description',
+      previewClass: 'placeholder',
+      tech: ['Angular', 'TypeScript', 'CSS']
     }
   ];
 

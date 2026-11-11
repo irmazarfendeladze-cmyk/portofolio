@@ -11,7 +11,6 @@
   "header": {
     "logo": "IRMA",
     "cv": "Download CV",
-    "cvUnavailable": "CV coming soon",
     "homeLabel": "Irma's home page",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
@@ -85,7 +84,7 @@
     "placeholder": "Preview unavailable",
     "marmenio": {
       "title": "GOURMET RESTAURANT",
-      "description": "A restaurant menu website with clearly organized dishes and a responsive layout."
+      "description": "A restaurant menu website that loads dish data from an API, with a clearly organized catalog and a responsive layout."
     },
     "figma": {
       "title": "FIGMA",
@@ -95,9 +94,13 @@
       "title": "MARMENIO",
       "description": "A jewelry and lifestyle landing page focused on luxury product storytelling and premium visual identity."
     },
+    "trainTicket": {
+      "title": "TRAIN TICKETS",
+      "description": "A train ticket search and trip planning website with API integration, route selection, and departure date selection."
+    },
     "shop": {
       "title": "ONLINE SHOP",
-      "description": "Responsive e-commerce storefront with catalog browsing, search, and cart interactions."
+      "description": "A responsive e-commerce storefront that loads products from an API, with catalog browsing, search, and cart interactions."
     }
   },
   "contact": {

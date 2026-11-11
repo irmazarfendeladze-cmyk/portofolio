@@ -33,6 +33,11 @@ export class HeaderComponent {
 
   constructor(readonly languageService: LanguageService) {}
 
+  get cvFileName(): string {
+    const language = this.languageService.currentLanguage;
+    return `Irma-Endeladze-CV${language === 'en' ? '' : `-${language}`}.pdf`;
+  }
+
   changeLanguage(language: LanguageCode): void {
     this.languageService.switchLanguage(language);
     this.closeMenu();

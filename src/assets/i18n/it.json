@@ -11,7 +11,6 @@
   "header": {
     "logo": "IRMA",
     "cv": "Scarica CV",
-    "cvUnavailable": "CV in arrivo",
     "homeLabel": "Pagina iniziale di Irma",
     "openMenu": "Apri il menu di navigazione",
     "closeMenu": "Chiudi il menu di navigazione",
@@ -85,7 +84,7 @@
     "placeholder": "Anteprima non disponibile",
     "marmenio": {
       "title": "GOURMET RESTAURANT",
-      "description": "Un sito per il menu di un ristorante, con piatti ben organizzati e un design adatto a ogni schermo."
+      "description": "Un sito per il menu di un ristorante che carica i dati dei piatti tramite API, con un catalogo ben organizzato e un design adatto a ogni schermo."
     },
     "figma": {
       "title": "FIGMA",
@@ -95,9 +94,13 @@
       "title": "MARMENIO",
       "description": "Una pagina di presentazione dedicata ai gioielli e allo stile di vita, che racconta i prodotti di alta gamma e l'identità visiva del marchio."
     },
+    "trainTicket": {
+      "title": "BIGLIETTI DEL TRENO",
+      "description": "Un sito per cercare biglietti del treno e pianificare viaggi, con integrazione API e scelta della tratta e della data di partenza."
+    },
     "shop": {
       "title": "NEGOZIO ONLINE",
-      "description": "Negozio online che si adatta a ogni schermo, con catalogo, ricerca e possibilità di aggiungere prodotti al carrello."
+      "description": "Un negozio online adatto a ogni schermo che carica i prodotti tramite API, con catalogo, ricerca e possibilità di aggiungere prodotti al carrello."
     }
   },
   "contact": {

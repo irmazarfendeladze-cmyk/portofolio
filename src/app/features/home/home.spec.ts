@@ -5,17 +5,21 @@ import { HomeComponent } from './home';
 describe('Portfolio interactions', () => {
   beforeEach(() => TestBed.configureTestingModule({ imports: [HomeComponent], providers: [provideRouter([])] }));
 
-  it('shows three working projects with preview images and filters the cards', async () => {
+  it('shows four working projects with preview images and filters the cards', async () => {
     const fixture = TestBed.createComponent(HomeComponent);
     await fixture.whenStable();
     const page = fixture.nativeElement as HTMLElement;
-    expect(page.querySelectorAll('app-project-card')).toHaveLength(3);
-    expect(page.querySelectorAll('.project-link')).toHaveLength(3);
-    expect(page.querySelectorAll('.project-preview img')).toHaveLength(3);
+    expect(page.querySelectorAll('app-project-card')).toHaveLength(4);
+    expect(page.querySelectorAll('.project-link')).toHaveLength(4);
+    expect(page.querySelectorAll('.project-preview img')).toHaveLength(4);
     page.querySelectorAll<HTMLButtonElement>('.project-filters button')[3].click();
     await fixture.whenStable();
     expect(page.querySelectorAll('app-project-card')).toHaveLength(1);
     expect(page.querySelector('.project-link')?.getAttribute('href')).toBe('https://onlineshop-ashy.vercel.app/');
+    page.querySelectorAll<HTMLButtonElement>('.project-filters button')[1].click();
+    await fixture.whenStable();
+    expect(page.querySelectorAll('app-project-card')).toHaveLength(2);
+    expect(page.querySelector('a[href="https://train-ticket2.vercel.app/search"]')).toBeTruthy();
   });
 
   it('rejects whitespace-only fields and keeps entered values', async () => {

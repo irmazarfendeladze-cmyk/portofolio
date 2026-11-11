@@ -35,6 +35,11 @@ describe('Language switching', () => {
       const expected = dictionaries[language];
       expect(page.querySelector('h1')?.textContent).toBe(expected.hero.title);
       expect(page.querySelector('.brand')?.textContent).toBe(expected.header.logo);
+      const cvFilename = `Irma-Endeladze-CV${language === 'en' ? '' : `-${language}`}.pdf`;
+      const cvLink = page.querySelector<HTMLAnchorElement>('a.download-button');
+      expect(cvLink?.getAttribute('href')).toBe(`assets/files/${cvFilename}`);
+      expect(cvLink?.getAttribute('download')).toBe(cvFilename);
+      expect(cvLink?.textContent?.trim()).toBe(expected.header.cv);
       expect(page.querySelector('.footer-socials a')?.textContent?.trim()).toBe(expected.contact.emailLabel);
       expect(page.querySelector('.form-feedback')?.textContent).toBe(expected.contact.form.invalid);
       expect(page.querySelectorAll('.project-badge')[1].textContent).toBe(expected.projects.filters.ui);

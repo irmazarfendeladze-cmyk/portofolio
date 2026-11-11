@@ -41,9 +41,9 @@
           </button>
         </div>
 
-        <button class="download-button" type="button" disabled [title]="'header.cvUnavailable' | translate">
-          {{ 'header.cvUnavailable' | translate }}
-        </button>
+        <a class="download-button" [href]="'assets/files/' + cvFileName" [download]="cvFileName" type="application/pdf" (click)="closeMenu()">
+          {{ 'header.cv' | translate }}
+        </a>
       </div>
     </nav>
   </div>
